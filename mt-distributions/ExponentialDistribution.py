@@ -1,4 +1,3 @@
-from email import message
 import math
 from .GeneralDistribution import Distribution
 from .ErlangDistribution import Erlang
