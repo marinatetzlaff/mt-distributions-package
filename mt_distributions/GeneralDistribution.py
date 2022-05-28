@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from .utils import frange
 
 class Distribution:
 	
@@ -57,7 +58,7 @@ class Distribution:
 			
 		"""
 		# Create the arrays of values to plot
-		x = [i for i in range(min_x, max_x)]
+		x = [i for i in frange(min_x, max_x, 0.1)]
 		y = [self.pdf(i) for i in x]
 		
 		# Make the plots
@@ -65,6 +66,7 @@ class Distribution:
 		ax.set_title(title)
 		ax.plot(x, y)
 		ax.set_ylabel('Density')
+		ax.set_xlabel('x')
 		plt.show()
 
 		return x, y
