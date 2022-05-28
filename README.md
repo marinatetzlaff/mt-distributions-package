@@ -1,2 +1,8 @@
 # mt-distributions-package
-Package for Binomial and Normal distributions added to PyPi
+Package of utilities surrounding the following random distributions:
+
+- Binomial
+- Normal
+- Exponential
+    - Erlang
+    - HypoExponential
