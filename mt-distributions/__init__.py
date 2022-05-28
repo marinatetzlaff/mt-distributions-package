@@ -1,2 +1,5 @@
-from .Gaussiandistribution import Gaussian
-from .Binomialdistribution import Binomial
+from .GaussianDistribution import Gaussian
+from .BinomialDistribution import Binomial
+from .ErlangDistribution import Erlang
+from .ExponentialDistribution import Exponential
+from .ExponentialDistribution import HypoExponential

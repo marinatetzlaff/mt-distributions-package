@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 class Distribution:
 	
 	def __init__(self, mu=0, sigma=1):
@@ -15,6 +17,8 @@ class Distribution:
 		self.stdev = sigma
 		self.data = []
 
+	def pdf(self):
+		pass
 
 	def read_data_file(self, file_name):
 	
@@ -39,3 +43,28 @@ class Distribution:
 	
 		self.data = data_list
 
+	def plot_pdf(self, min_x, max_x, title):
+
+		"""Function to plot the PDF of a Distribution in the range [min_x, max_x]
+		
+		Args:
+			min_x (int|float) the minimum value to plot
+			max_x (int|float) the maximum value to plot
+		
+		Returns:
+			list: x values for the pdf plot
+			list: y values for the pdf plot
+			
+		"""
+		# Create the arrays of values to plot
+		x = [i for i in range(min_x, max_x)]
+		y = [self.pdf(i) for i in x]
+		
+		# Make the plots
+		fig, ax = plt.subplots()
+		ax.set_title(title)
+		ax.plot(x, y)
+		ax.set_ylabel('Density')
+		plt.show()
+
+		return x, y
