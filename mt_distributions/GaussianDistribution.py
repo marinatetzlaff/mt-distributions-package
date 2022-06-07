@@ -1,6 +1,6 @@
 import math
 import matplotlib.pyplot as plt
-from .Generaldistribution import Distribution
+from .GeneralDistribution import Distribution
 
 class Gaussian(Distribution):
 	""" Gaussian distribution class for calculating and 

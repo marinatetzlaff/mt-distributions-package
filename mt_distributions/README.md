@@ -2,12 +2,17 @@
 
 - Binomial distribution class for calculating and visualizing a Binomial distribution
 - Gaussian distribution class for calculating and visualizing a Gaussian distribution.
+- Exponential distribution class for calculating and visualizing an Exponential Distribution
+- HypoExponential distribution class for calculating and visualizing a HypoExponential Distribution
+- Erlang distribution class for calculating and visualizing an Erlang Distribution 
 
 # Files
 
-- Binomialdistribution.py
-- Gaussiandistribution.py
-- Generaldistribution.py
+- BinomialDistribution.py
+- GaussianDistribution.py
+- GeneralDistribution.py
+- ExponentialDistribution.py
+- ErlangDistribution.py
 
 # Installation
 
